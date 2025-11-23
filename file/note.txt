@@ -1,0 +1,2 @@
+Hello guys welcome to the file handeling in php.
+BCA stands for bachelor in computer Applications.      
