@@ -3,8 +3,8 @@ $host="localhost";
 $dbname="bca2080";
 $username="root";
 $password="";
- $conn=mysqli_connect($host, $username, $password, $dbname);
- if(!$conn){
+ $connection=mysqli_connect($host, $username, $password, $dbname);
+ if(!$connection){
     echo "Error while connecting to the database";
     die();
  }

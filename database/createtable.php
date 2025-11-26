@@ -8,7 +8,7 @@ $createtablesql="CREATE table check_table(
 id INT  PRIMARY KEY,
 data VARCHAR(50) 
 )";
-mysqli_query($conn,$createtablesql);
-mysqli_close($conn);
+mysqli_query( $connection,$createtablesql);
+mysqli_close( $connection);
 
 ?>
