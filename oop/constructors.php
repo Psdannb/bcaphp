@@ -1,5 +1,6 @@
 <?php
-// A constructor runs automatically when object is created.
+// A constructor is a special function inside a class that is automatically executed when an object is created. 
+// It is used to initialize object properties or perform setup tasks.
 class student {
     public $name;
     public $faculty;
