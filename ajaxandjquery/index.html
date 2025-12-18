@@ -7,15 +7,32 @@
   <body>
     <button id="btn">Click Me</button>
     <div id="result"></div>
-
     <script>
-      $("#btn").click(function () {
-        $.ajax({
-          url: "data.php",
-          type: "GET",
-          success: function (response) {
-            $("#result").html(response);
-          },
+      // $("#btn").click(function () {
+      //   $.ajax({
+      //     url: "data.php",
+      //     type: "GET",
+      //     success: function (response) {
+      //       $("#result").html(response);
+      //     },
+      //   });
+      // });
+      $(document).ready(() => {
+        $("#btn").click(() => {
+          $.ajax({
+            url: "data.php",
+            type: "POST",
+            beforeSend: function () {
+              alert("i am receiveing the data from another page");
+            },
+            success: function (response) {
+              alert("Data recived sucessfully");
+              $("#result").html(response);
+            },
+            error: function () {
+              alert("An error has been occured");
+            },
+          });
         });
       });
     </script>

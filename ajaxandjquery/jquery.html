@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery examples</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <a href="index.html"></a>
+    <a href="about.html"></a>
+    <button id="btn">click to hide</button>
+    <p id="para">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus amet
+      modi, minus, ratione fugiat asperiores optio impedit numquam ab eaque ut
+      natus nulla mollitia maiores veritatis hic sapiente quis cum.
+    </p>
+    <button id="btn2">click to show</button>
+  </body>
+  <script>
+    $(document).ready(() => {
+      // $("#btn")
+      // $(".classname")
+      // $("p")
+      // $("a")
+      // $("[href]")
+      // $("[href='index.html']")
+      $("#btn").click(() => {
+        $("#para").hide();
+      });
+
+      $("#btn2").click(function () {
+        $("#para").show();
+      });
+    });
+  </script>
+</html>
